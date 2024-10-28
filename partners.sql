@@ -9,7 +9,7 @@ CREATE TABLE partners (
     contact_email VARCHAR(100),
     logo BLOB,
     rating INT DEFAULT 0,
-    sales_locations TEXT,  -- JSON формат для хранения мест продаж
-    discount_rate DECIMAL(5,2) DEFAULT 0.00,  -- скидка, зависящая от объема продаж
+    sales_locations TEXT,
+    discount_rate DECIMAL(5,2) DEFAULT 0.00,
     currency ENUM('RUB') DEFAULT 'RUB'
 );
